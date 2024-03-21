@@ -1,0 +1,29 @@
+1 - Efetuamos os procedimentos de completos de git até o push, de forma a submeter todos os arquivos gerados no pelo npm.
+2 - Apagamos a subpasta assets contida na pasta src. Apagamos tudo o que estiver na pasta components.
+3 - No App.vue, apagaremos todo o código, deixando apenas a seguinte estrutura:
+    <script setup>
+
+    </script>
+
+    <template>
+
+    </template>
+
+    <style scoped>
+
+    </style>
+
+4 - No main.js, removeremos o "import './assets/main.css'" deixando a seguinte estrutura:
+    
+    import { createApp } from 'vue'
+    import App from './App.vue'
+
+    createApp(App).mount('#app')
+
+5 - Instalamos o Bootstrap via npm: "npm i bootstrap@5.3.3".
+6 - Importamos o bootstrap no main.js com "import 'bootstrap/dist/css/bootstrap.min.css'".
+
+
+
+-----------------------------------------------------
+Estudar o módulo 'reactive'.
