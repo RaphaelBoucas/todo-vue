@@ -23,7 +23,30 @@
 5 - Instalamos o Bootstrap via npm: "npm i bootstrap@5.3.3".
 6 - Importamos o bootstrap no main.js com "import 'bootstrap/dist/css/bootstrap.min.css'".
 
+7 - Escrevemos o código até o programa ficar funcional.
+
+---COMPARTIMENTAÇÃO---
+
+8 - Na pasta components criamos um arquivo 'Cabecalho.vue' e adicionamos a tag <header> e seus elementos filhos. Todos envoltos a tag <template> para que o Vue.js entenda que trata-se de código HTML.
+
+9 - Após separar o bloco de código em um novo arquivo, fizemos a importação desse 'módulo' com a seguinte linha: "import Cabecalho from './Components/Cabecalho.vue';"
+
+10 - Realizamos o mesmo procedimento acima para criar os seguintes compontentes: 'Formulario' e 'ListaDeTarefas';
+    
+11 - A chamada dos módulos em questão se dá ao inserir os seus nomes em tags dentro da tag <template> do arquivo App.vue, conforme abaixo:
+    
+<template>
+    <Cabecalho />
+    <Formulario />
+    <ListaDeTarefas />
+</template>
+
 
 
 -----------------------------------------------------
-Estudar o módulo 'reactive'.
+Notas adicionais:
+
+1 - Estudar o módulo 'reactive'.
+
+2- Quando pressiona o F1 e busca 'format document' há uma função que organiza a identação do código (mão na roda).
+
